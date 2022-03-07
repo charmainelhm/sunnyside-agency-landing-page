@@ -50,6 +50,14 @@ h3 {
   font-weight: 900;
 }
 
+h1 {
+  font-size: var(--fs-700);
+}
+
+h2 {
+  font-size: var(--fs-600);
+}
+
 p,
 blockquote {
   line-height: 1.6;
@@ -58,6 +66,54 @@ blockquote {
 .container {
   width: 90%;
   margin-inline: auto;
+}
+
+/* Overlap Content */
+.overlap {
+  display: grid;
+}
+
+picture {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.overlap__img {
+  display: block;
+  width: 100%;
+}
+
+.overlap__content {
+  text-align: center;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.overlap__content--feature {
+  align-self: flex-end;
+  padding-bottom: 6rem;
+}
+
+.overlap__content h2 {
+  margin-bottom: 3rem;
+}
+
+.overlap__content--green {
+  color: var(--color-text-green);
+}
+
+.overlap__content--blue {
+  color: var(--color-text-blue);
+}
+
+/* Hero Block */
+.hero__content {
+  color: var(--color-white);
+}
+
+.hero__content h1 {
+  text-transform: uppercase;
+  letter-spacing: 6px;
 }
 
 /* Testimonial */
