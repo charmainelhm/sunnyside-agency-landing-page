@@ -67,7 +67,7 @@ blockquote {
 }
 
 img {
-  width: auto;
+  width: 100%;
   display: block;
 }
 
@@ -180,11 +180,6 @@ img {
   grid-column: 1/2;
 }
 
-.overlap__img {
-  display: block;
-  width: 100%;
-}
-
 .overlap__content {
   text-align: center;
   grid-row: 1/2;
@@ -194,6 +189,7 @@ img {
 .overlap__content--feature {
   align-self: flex-end;
   padding-bottom: 6rem;
+  max-width: 400px;
 }
 
 .overlap__content h2 {
@@ -215,6 +211,7 @@ img {
   align-items: center;
   padding-block: 4rem;
   position: absolute;
+  /* width: 100%; */
   left: 0;
   right: 0;
 }
@@ -246,6 +243,7 @@ img {
 
   .toggle-icon {
     opacity: 0.6;
+    width: auto;
   }
 
   .nav__list {
@@ -308,6 +306,7 @@ img {
 }
 
 .arrow {
+  width: auto;
   display: inline;
   margin-top: 6rem;
 }
@@ -366,6 +365,7 @@ img {
 .testimonial__photo {
   width: 72px;
   border-radius: 50px;
+  display: inline;
 }
 
 .testimonial__content {
